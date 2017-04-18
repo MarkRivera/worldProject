@@ -1,0 +1,38 @@
+body {
+	margin-top: 2.5em;
+}
+
+nav {
+	opacity: 0;
+	animation: fadeInPng 5s ease-in;
+	animation-fill-mode: forwards;
+}
+
+nav li {
+	padding: 0 15px;
+}
+
+nav a {
+	color: black;
+}
+
+nav a:hover {
+	color: black;
+}
+
+.backG {
+	position: relative;
+	z-index: -1;
+	opacity: 0;
+	animation: fadeInPng 5s ease-in;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeInPng {
+99% {
+		visibility: hidden;
+	}
+100% {
+		visibility: visible;
+		opacity: 1;
+}
