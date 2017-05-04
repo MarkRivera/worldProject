@@ -1,15 +1,10 @@
-body {
-	margin-top: 2.5em;
-}
-
 nav {
 	opacity: 0;
 	animation: fadeInPng 5s ease-in;
 	animation-fill-mode: forwards;
-}
-
-nav li {
-	padding: 0 15px;
+	background-color: #f6f6f6;
+	box-shadow: 0 0 2px 0px;
+	width: 100%;
 }
 
 nav a {
@@ -20,12 +15,20 @@ nav a:hover {
 	color: black;
 }
 
+nav li {
+	padding: 0 15px;
+}
+
 .backG {
 	position: relative;
 	z-index: -1;
 	opacity: 0;
 	animation: fadeInPng 5s ease-in;
 	animation-fill-mode: forwards;
+}
+
+#mainContent{
+	background-color: #f6f6f6;
 }
 
 @keyframes fadeInPng {
