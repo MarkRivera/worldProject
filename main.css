@@ -1,7 +1,7 @@
 nav {
 	opacity: 0;
-	animation: fadeInPng 5s ease-in;
-	animation-fill-mode: forwards;
+	animation: fadeInPng 5s ease-in forwards;
+	-webkit-animation: fadeInPng 5s ease-in forwards;
 	background-color: #f6f6f6;
 	box-shadow: 0 0 2px 0px;
 	width: 100%;
@@ -15,20 +15,31 @@ nav a:hover {
 	color: black;
 }
 
-nav li {
-	padding: 0 15px;
-}
-
 .backG {
 	position: relative;
 	z-index: -1;
 	opacity: 0;
-	animation: fadeInPng 5s ease-in;
-	animation-fill-mode: forwards;
+	animation: fadeInPng 5s ease-in forwards;
+	-webkit-animation: fadeInPng 5s ease-in forwards;
 }
 
 #mainContent{
 	background-color: #f6f6f6;
+	box-shadow: 0 0 2px 0;
+}
+
+#transparentDiv {
+	opacity: 0;
+	height: 50vh;
+}
+
+@-webkit-keyframes fadeInPng {
+99% {
+		visibility: hidden;
+	}
+100% {
+		visibility: visible;
+		opacity: 1;
 }
 
 @keyframes fadeInPng {
